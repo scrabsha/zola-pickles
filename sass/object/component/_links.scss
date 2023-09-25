@@ -32,3 +32,16 @@
     fill: currentColor;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .c-links {
+    a {
+      border-color: $color-text-dark;
+      color: $color-text-dark;
+      &:hover {
+        background: $color-text-dark;
+        color: #111;
+      }
+    }
+  }
+}

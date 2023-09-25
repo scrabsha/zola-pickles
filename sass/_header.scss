@@ -3,3 +3,24 @@
   padding: 20px 0;
   text-align: center;
 }
+.theme-switcher {
+  font-size: 30px;
+}
+
+#light-mode {
+  display: block;
+}
+
+#dark-mode {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  #light-mode {
+    display: none;
+  }
+
+  #dark-mode {
+    display: block;
+  }
+}

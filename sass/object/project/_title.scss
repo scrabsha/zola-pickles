@@ -7,3 +7,11 @@
     color: $color-text;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .p-title {
+    &__link {
+      color: $color-text-dark;
+    }
+  }
+}

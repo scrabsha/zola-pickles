@@ -7,6 +7,13 @@
 
 html {
   font-size: 62.5%;
+  background-color: $bg-color;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: $bg-color-dark;
+  }
 }
 
 body {
@@ -14,6 +21,12 @@ body {
   font-size: 1rem;
   font-family: $SanFrancisco;
   line-height: 1.50;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: $color-text-dark;
+  }
 }
 
 h1,
@@ -93,14 +106,18 @@ dd {
   font-size: 1.6rem;
 }
 
+
 pre {
   display: block;
   padding: 12px;
   border-radius: 3px;
-  background-color: #f8f8f8;
   font-size: 1.2rem;
   word-wrap: break-word;
   overflow: auto;
+}
+
+pre.mermaid {
+  text-align: center;
 }
 
 code {
@@ -147,6 +164,7 @@ img {
 @import "header";
 @import "main";
 @import "nav";
+@import "comment";
 @import "object/component/anchor";
 @import "object/component/article";
 @import "object/component/equation";

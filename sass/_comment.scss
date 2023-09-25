@@ -1,0 +1,142 @@
+.comment-reddit {
+    background-color: #0b1416;
+    padding: .75rem;
+    font-size: 16px;
+    border-radius: 3px;
+    padding: 12px
+}
+
+.comment-reddit-header {
+    display: flex;
+    align-items: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: calc(.75rem/0.625)
+}
+
+.comment-reddit-avatar {
+    margin-right: .75rem;
+}
+
+.comment-reddit-avatar-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 624.9375rem;
+}
+
+.comment-reddit-username {}
+
+.comment-reddit-greyed-out {
+    color: #82959B
+}
+
+.comment-reddit-sep {
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.comment-reddit-padded {
+    margin-left: 16.5px;
+    height: calc(100% + 6px);
+    padding-left: 2rem
+}
+
+.comment-reddit-body {
+    font-size: calc(0.875rem/0.625)
+}
+
+.comment-reddit-footer {
+    display: inline-flex;
+    align-items: center
+}
+
+.comment-reddit-action-outer {
+    aspect-ratio: 1/1;
+    font-size: 0px;
+    align-items: center;
+    display: inline-flex
+}
+
+.comment-reddit-action-inner {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    font-size: 14px
+}
+
+.comment-reddit-counter {
+    display: inline-flex;
+    font-size: 1rem;
+}
+
+.comment-masto {
+    background-color: #282c37;
+    padding: 16px;
+    border-radius: 3px;
+}
+
+.comment-masto-header {
+    max-width: 100%;
+    display: flex;
+    line-height: 22px;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.comment-masto-avatar {
+    width: 46px;
+    height: 46px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.comment-masto-username {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 22px;
+}
+
+.comment-masto-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+}
+
+.comment-masto-handle {
+    white-space: nowrap;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #606984;
+}
+
+.comment-masto-body {
+    font-size: 15px;
+    padding-top: 2px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.comment-masto-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    margin-top: 16px;
+    font-size: 18px;
+    color: #606984
+}
+
+.comment-masto-plus-one {
+    font-size: 13px;
+    position: static;
+    transform: translateY(0%);
+}

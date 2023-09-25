@@ -7,3 +7,9 @@
   font-weight: 300;
   font-family: $SourceSansPro;
 }
+
+@media (prefers-color-scheme: dark) {
+  .p-subtitle {
+    color: $color-text-dark;
+  }
+}

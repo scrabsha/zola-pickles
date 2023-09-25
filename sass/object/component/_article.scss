@@ -40,3 +40,16 @@
     }
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .c-article {
+    &__title {
+      & a {
+        color: $color-title-dark;
+      }
+    }
+    &__summary {
+      color: $color-text-dark;
+    }
+  }
+}
