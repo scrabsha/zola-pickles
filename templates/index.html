@@ -42,6 +42,7 @@
         {% block css -%}
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="{{ get_url(path="base.css") }}" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
         <link href="{{ get_url(path="fontawesome/fontawesome.css") }}" rel="stylesheet">
         <link href="{{ get_url(path="fontawesome/brands.css") }}" rel="stylesheet">
@@ -136,6 +137,16 @@
       <script defer src="{{ get_url(path="js/katex.min.js") }}"></script>
       <script defer src="{{ get_url(path="js/mathtex-script-type.min.js") }}"></script>
       {%- endif %}
+
+      <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ?
+                "dark" : "default"
+        });
+      </script>
     </body>
 </html>
             
